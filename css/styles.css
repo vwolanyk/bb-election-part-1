@@ -1,0 +1,72 @@
+body { text-align: center;
+      width: 80%;
+      background-image: url('../images/bikini-bottom.jpg');
+      background-blend-mode:luminosity;}
+img { width: 100%;
+    vertical-align: middle;
+
+}
+.square{
+    width:100px;
+    height:100px;
+    border: 5px solid black;
+    border-collapse: collapse;
+    background-color: purple;
+}
+
+#board {margin: auto;
+        /*display: none;}*/
+}
+
+.winningSquare {
+  border: 10px solid red;
+}
+table {
+  margin:auto;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+#winningHeading {
+
+  padding: 20px 0;
+  background-color: orange;
+  color: black;
+  font-size: 3em;
+  border: none;
+  width: 60%;
+  margin: auto;
+}
+#winBox{visibility: hidden;}
+button {
+  border-radius: 5%;
+  padding: 20px 0;
+  background-color: lightblue;
+  color: red;
+  font-size: 3em;
+  border: none;
+  width: 80%;
+  margin: 10px 0;
+}
+
+button {
+  font-weight: bold;
+  font-family:sans-serif;
+  border-radius: 10px;
+  padding: 20px 0;
+  background-color: lightblue;
+  color: black;
+  font-size: 3em;
+  border: none;
+  width: 80%;
+  margin: 10px 0;
+}
+
+button:hover{background-color: darkblue;
+              color: red;}
+
+li { text-align: justify;
+    font-size: 2em;
+
+
+}
