@@ -1,11 +1,51 @@
-body { text-align: center;
-      width: 80%;
-      background-image: url('../images/bikini-bottom.jpg');
-      background-blend-mode:luminosity;}
+body, html {
+
+      height: 100%;
+
+      ;}
 img { width: 100%;
     vertical-align: middle;
 
 }
+
+/* The hero image */
+.hero-image {
+  height: 50%;
+  width: 100%;
+    /* The image used */
+    background-image: url('../images/bikini-bottom.jpg');
+
+
+    /* Set a specific height */
+
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right:0;
+    /*transform: translate(-50%, -50%);*/
+    color: cadetblue;
+    background-color: yellow;
+    font-family: sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    width: 60%;
+    padding: 10px;
+
+}
+
+
+
+
 .square{
     width:100px;
     height:100px;
@@ -53,13 +93,20 @@ button {
   font-weight: bold;
   font-family:sans-serif;
   border-radius: 10px;
-  padding: 20px 0;
-  background-color: lightblue;
+  padding: 5px 0;
+  background-color: red;
   color: black;
   font-size: 3em;
   border: none;
-  width: 80%;
-  margin: 10px 0;
+  width: 90%;
+  height: 25%;
+  margin: 5px 0;
+  text-align: center;
+  text-shadow: 5px;
+}
+
+main{
+  text-align: center;
 }
 
 button:hover{background-color: darkblue;
@@ -69,4 +116,8 @@ li { text-align: justify;
     font-size: 2em;
 
 
+}
+
+button.update{
+  display:none;
 }
