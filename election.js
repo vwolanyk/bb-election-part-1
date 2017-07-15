@@ -30,14 +30,15 @@ getResults.addEventListener('click', function(){
     voteHidden.name = "id";
     voteHidden.value = responsedata.candidates[i].id;
     var votes = document.createElement('span');
-    votes.innerHTML = responsedata.candidates[i].votes;
+    votes.innerHTML =  " Current Votes: " + responsedata.candidates[i].votes;
     votes.className = "votes";
     form.method = "POST";
     form.action = "https://bb-election-api.herokuapp.com/vote";
-    form.append(voteHidden, voteButton)
-    listItem.innerText = "Candidate: " + responsedata.candidates[i].name + ' Votes: ';
+    form.append(voteHidden, voteButton);
     listItem.append(votes);
     listItem.append(form);
+    listItem.append(document.createElement('hr'))
+    votes.style.float = "right"
     electionresults.append(listItem);
   }
     // Add event listeners to each form
@@ -64,7 +65,7 @@ getResults.addEventListener('click', function(){
         }).done(function(responsedata){
 
           for (var i = 0; i < $(".votes").length; i++){
-            $(".votes")[i].innerHTML = responsedata.candidates[i].votes
+            $(".votes")[i].innerHTML = " Current Votes: " + responsedata.candidates[i].votes
           }
         })
 

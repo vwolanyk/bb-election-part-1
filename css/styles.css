@@ -121,3 +121,7 @@ li { text-align: justify;
 button.update{
   display:none;
 }
+
+ul#electionresults {
+    -webkit-margin-before: 50px;
+}
